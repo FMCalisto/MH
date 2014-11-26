@@ -1,15 +1,14 @@
 # Introduction
 
 The objective of this assignment is to design an optimized cache architecture targeted for a specific
-embedded application: a video encoder. This architecture should be optimized in order to (i) minimize
-the monetary cost of the system, and (ii) improve performance by reducing the overall cache miss penalty
+embedded application: a video encoder. This architecture should be optimized in order to minimize
+the monetary cost of the system, and improve performance by reducing the overall cache miss penalty
 time associated to the execution of the video encoding algorithm.
 
-In the rest of this section, we briefly describe the targeted application (Section 1.1), present
-the requirements and restrictions for the memory hierarchy architecture (Section 1.2), and introduce
-DineroIV [1], the cache simulator that will be adopted to assess the performance of the memory hierarchy
-architecture (Section 1.3). In Section 2, we guide the students in designing a cache structure that
-best matches the requirements of the considered application program.
+In the rest of this section, we briefly describe the targeted application, present
+the requirements and restrictions for the memory hierarchy architecture, and introduce
+DineroIV , the cache simulator that will be adopted to assess the performance of the memory hierarchy
+architecture.
 
 
 ## Targeted Application
@@ -23,7 +22,7 @@ movement using previously encoded images.
 
 For this assignment, we will work with a real implementation of a motion estimation algorithm. The
 C source code file of a real implementation of this algorithm can be obtained at the course webpage
-(file motion_estimation.c). However, it is not necessary to understand the inner workings of this
+(`file motion_estimation.c`). However, it is not necessary to understand the inner workings of this
 algorithm. For the interested reader, we explain the details of motion estimation in Appendix A.
 
 
