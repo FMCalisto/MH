@@ -86,20 +86,23 @@ dineroIV [options] < tracefile
 
 where the most relevant parameters are:
 
-`−lN−Tsize P`  - Sets the cache size of the specified level N cache to P bytes
+`−lN−Tsize P`   - Sets the cache size of the specified level N cache to P bytes
 
-`−lN−Tbsize P` - Sets the block size of the specified level N cache to P bytes
+`−lN−Tbsize P`  - Sets the block size of the specified level N cache to P bytes
 
-`−lN−Tassoc U` - Sets the associativity of the specified level N cache to U
+`−lN−Tassoc U`  - Sets the associativity of the specified level N cache to U
 
-`−lN−Tccc`     - Computes Compulsory/Capacity/Conflict miss rates for the specified level N
-                 cache
+`−lN−Tccc`      - Computes Compulsory/Capacity/Conflict miss rates for the specified level N
+                  cache
 
 where:
 
 `T` - is the cache type (u=unified, i=instruction, d=data);
+
 `N` - is the cache level (1  N), where level 1 is closest to the processor;
+
 `U` - is an unsigned decimal integer;
+
 `P` - is like U, but must be a power of 2, with an optional scaling suffix character (one of kKmMgG,
       for multiplication by 0x400, 0x100000, or 0x40000000).
       
